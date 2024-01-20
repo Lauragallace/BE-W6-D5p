@@ -2,7 +2,7 @@ package lauragallace.BEW6D5p.exceptions;
 
 import java.util.UUID;
 
-public class NotFoundException extends BadRequestException {
+public class NotFoundException extends RuntimeException {
     public NotFoundException(UUID id) {
         super("Elemento con id " + id + " non trovato!");
     }
